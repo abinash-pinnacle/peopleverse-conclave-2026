@@ -193,7 +193,7 @@ function initRegistrationModal() {
   function updatePriceSummary() {
     if (!passTierSelect) return;
     const selectedOption = passTierSelect.options[passTierSelect.selectedIndex];
-    const price = selectedOption.getAttribute('data-price') || '1999';
+    const price = selectedOption.getAttribute('data-price') || '499';
     const formatted = '₹' + Number(price).toLocaleString('en-IN');
 
     const summaryInclusions = document.getElementById('summaryInclusions');
@@ -494,8 +494,8 @@ DETAILED CONCLAVE SCHEDULE (OCTOBER 3, 2026):
 - 04:15 – 04:30 PM: Felicitation, Valedictory & Vote of Thanks
 
 REGISTRATION CATEGORIES:
-- Corporate & HR Delegates: Executive Kit, Lunch, Session Access & Certificate
-- Students & Scholars: Delegate Kit, Lunch, Sessions & Certificate
+- Corporate & HR Delegates (₹499): Executive Kit, Lunch, Session Access & Certificate
+- Students & Research Scholars (₹199): Delegate Kit, Lunch, Sessions & Certificate
 
 SECRETARIAT & CONTACTS:
 Email: hrconclave@nmiet.ac.in
