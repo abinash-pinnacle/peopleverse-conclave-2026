@@ -973,13 +973,81 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-heading);
   margin-bottom: 1.2rem;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .body-text {
   color: var(--text-muted);
   font-size: 1rem;
   margin-bottom: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+/* About NMIET B-School Card Alignment */
+.bschool-card {
+  max-width: 1020px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1.5px solid var(--border-light);
+  border-top: 4px solid var(--logo-navy);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 3.25rem;
+  box-shadow: var(--shadow-md);
+}
+
+.bschool-pillars-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1.5px dashed var(--border-light);
+}
+
+.bschool-pillar-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #f0f9ff;
+  border: 1.5px solid #bae6fd;
+  color: var(--logo-navy);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-full);
+}
+
+.bschool-pillar-pill i {
+  color: var(--logo-teal);
+  font-size: 1rem;
+}
+
+.bschool-text-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bschool-text-grid .body-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--text-main);
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .bschool-card {
+    padding: 1.75rem 1.4rem;
+  }
+  .bschool-text-grid .body-text {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
 }
 
 .about-highlights-list {
