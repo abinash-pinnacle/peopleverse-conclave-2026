@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
    1. COUNTDOWN TIMER
    ========================================================================== */
 function initCountdownTimer() {
-  // Target date from official brochure: October 3, 2026, 09:30:00 IST
-  const targetDate = new Date('October 3, 2026 09:30:00 GMT+0530').getTime();
+  // Target date from official brochure: November 14, 2026, 09:30:00 IST
+  const targetDate = new Date('November 14, 2026 09:30:00 GMT+0530').getTime();
 
   const daysEl = document.getElementById('days');
   const hoursEl = document.getElementById('hours');
@@ -411,108 +411,22 @@ function initBrochureDownloads() {
   brochureButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      showToast('Preparing Peopleverse 2026 Executive Brochure (PDF)...', 'info');
+      showToast('Downloading Peopleverse 2026 Official Brochure (PDF)...', 'info');
+
+      const pdfUrl = 'assets/PeopleVerse-HR-Conclave-Brochure.pdf';
+      const a = document.createElement('a');
+      a.href = pdfUrl;
+      a.download = 'PeopleVerse-HR-Conclave-2026-Brochure.pdf';
+      a.target = '_blank';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
 
       setTimeout(() => {
-        // Trigger simulated PDF download
-        downloadMockBrochure();
-        showToast('Brochure downloaded successfully! Check your downloads.', 'success');
-      }, 900);
+        showToast('Official PDF Brochure downloaded!', 'success');
+      }, 600);
     });
   });
-
-  function downloadMockBrochure() {
-    const brochureText = `
-=============================================================
-HR CONCLAVE 2026
-HR 5.0 — Reimagining People, Performance & Possibilities
-Integrating Artificial Intelligence, Human Capability & Workplace Ethics for Sustainable Performance
-Presented by:
-NMIET B-School (Department of Management), Bhubaneswar
-In association with PINNACLE
-=============================================================
-
-DATE: October 3, 2026
-TIME: 09:30 AM – 04:30 PM IST
-VENUE: Main Auditorium, NMIET B-School, Sijua, Patrapada, Bhubaneswar, Odisha 751019
-
-CONCLAVE VISION & CONTEXT:
-The flagship HR Conclave 2026 organized by NMIET B-School serves as a national thought-leadership platform bringing together corporate CHROs, HR practitioners, industry experts, academic scholars, and management delegates. In an era marked by rapid AI integration, hybrid work ecosystems, and shifting employee expectations, the traditional mandate of Human Resource Management is undergoing a profound structural evolution.
-
-Transitioning beyond conventional administrative functions and Industry 4.0 automation, the conclave explores HR 5.0—where cutting-edge technology and human capability converge with purpose, empathy, cognitive well-being, and organizational performance. The event connects classroom concepts with real workplace realities through keynote addresses, panel discussions, interactive Q&As, and experiential decision-making challenges.
-
-KEY OBJECTIVES:
-1. Deciphering HR 5.0 (AI + Empathy)
-2. Industry-Academia Collaboration
-3. Workplace Dignity & Inclusivity: Beyond Compliance
-4. Behavioral Decision Making ("Risk It, But Think Smart")
-5. Ethical Leadership & Well-being
-
-THEMATIC PANELS:
-- PANEL 1: "People + Technology & AI: Redefining the Future of HR!"
-  Moderator: Ms. Jayashree Mishra (Head HR, Deloitte)
-  Panel Members: 1. Subashish Das (Director, ADRENT Steel) | 2. Rosy Das (AABSyS IT)
-- PANEL 2: Modern Workplace: "Beyond Compliance: Building Inclusive Workplaces"
-  Moderator: Dr. Adarsh Rath (Entrepreneur)
-  Panel Members: 1. Dr. Isha Mishra (Associate Professor, KIIT) | 2. R.K. Mohapatra (Former HR Head, IOCL) | 3. Mr. Parthasarathi Mishra (Ex-CHRM, Tata Steel)
-
-OFFICIAL GUEST DETAILS:
-Inaugural Guests:
-1. Smt. Richa Parida — Chairperson, NMIET (Chief Patron)
-2. Dr. Niranjan Mishra — Principal, NMIET (Patron)
-3. Dr. Subhendhu Dash — NIPM
-4. Shri Santosh Dash — Director, Pinnacle Human Resource Pvt Ltd
-5. Dr. Sureshwari Prasad Das — Director Academics, NMIET B-School
-
-Programme Anchors:
-1. Dr. Chanchal Mukherjee — Faculty, NMIET
-2. Ms. Mansi Nayak — Faculty, NMIET
-
-Keynote Speaker:
-- Dr. Debabrata Dash — Head - Human Resources (East)
-
-Vote of Thanks:
-- Dr. Sureshwari Prasad Das — Director Academics, NMIET B-School
-
-FEATURED EXPERIENTIAL ACTIVITY:
-"Risk It, But Think Smart: The Psychology of Business Decisions"
-(Interactive business simulation for students and young delegates + Top 3 Student Competitive Presentations)
-
-DETAILED CONCLAVE SCHEDULE (OCTOBER 3, 2026):
-- 09:30 – 10:30 AM: Registration & Welcome Kit Distribution
-- 10:30 – 10:45 AM: Welcome Address & Ceremonial Lamp Lighting
-- 10:45 – 11:20 AM: Inaugural Address by Leadership & Guest Dignitaries
-- 11:20 – 11:30 AM: Networking Tea Break
-- 11:30 AM – 12:00 PM: Keynote Address: "Why HR 5.0, Why Now?"
-- 12:00 – 12:45 PM: Panel Discussion 1: People + Technology & AI Integration
-- 12:45 – 01:00 PM: Interactive Audience Q&A Session
-- 01:00 – 02:00 PM: Networking Lunch Break
-- 02:00 – 03:00 PM: Parallel Sessions (Track A: HR Delegates' Viewpoint / Track B: Student Activity "Risk It, But Think Smart")
-- 03:00 – 03:30 PM: Panel Discussion 2: Modern Workplace Equity & Inclusivity
-- 03:30 – 03:40 PM: Interactive Audience Q&A Session
-- 03:45 – 04:15 PM: Top 3 Student Competitive Presentations
-- 04:15 – 04:30 PM: Felicitation, Valedictory & Vote of Thanks
-
-REGISTRATION CATEGORIES:
-- Corporate & HR Delegates (₹499): Executive Kit, Lunch, Session Access & Certificate
-- Students & Research Scholars (₹199): Delegate Kit, Lunch, Sessions & Certificate
-
-SECRETARIAT & CONTACTS:
-Email: hrconclave@nmiet.ac.in
-Phone: +91 94370 12345 / 0674-2471888
-Website: https://nmiet.ac.in
-=============================================================
-`;
-    const blob = new Blob([brochureText], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'HR_Conclave_2026_NMIET_BSchool_Brochure.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
 }
 
 /* ==========================================================================
