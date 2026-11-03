@@ -330,8 +330,8 @@ function initSpeakerModal() {
       role: 'Entrepreneur & Thought Leader',
       company: 'Panel 2 Moderator — HR Conclave 2026',
       initials: 'AR',
-      bio: 'Dr. Adarsh Rath is an accomplished entrepreneur and leadership advisor moderating Panel Discussion 2 on workplace dignity, POSH frameworks beyond compliance, and inclusive organizational cultures.',
-      session: 'Panel 2 Moderator (03:00 – 03:30 PM): POSH & Modern Workplace — "Beyond Compliance: Building Inclusive Workplaces"',
+      bio: 'Dr. Adarsh Rath is an accomplished entrepreneur and leadership advisor moderating Panel Discussion 2 on workplace dignity, governance frameworks beyond compliance, and inclusive organizational cultures.',
+      session: 'Panel 2 Moderator (03:00 – 03:30 PM): Modern Workplace — "Beyond Compliance: Building Inclusive Workplaces"',
       takeaways: [
         'Panel Member 1: Dr. Isha Mishra — Associate Professor, KIIT',
         'Panel Member 2: Mr. R.K. Mohapatra — Former HR Head, IOCL',
@@ -444,7 +444,7 @@ Transitioning beyond conventional administrative functions and Industry 4.0 auto
 KEY OBJECTIVES:
 1. Deciphering HR 5.0 (AI + Empathy)
 2. Industry-Academia Collaboration
-3. Workplace Dignity & POSH: Beyond Compliance
+3. Workplace Dignity & Inclusivity: Beyond Compliance
 4. Behavioral Decision Making ("Risk It, But Think Smart")
 5. Ethical Leadership & Well-being
 
@@ -452,7 +452,7 @@ THEMATIC PANELS:
 - PANEL 1: "People + Technology & AI: Redefining the Future of HR!"
   Moderator: Ms. Jayashree Mishra (Head HR, Deloitte)
   Panel Members: 1. Subashish Das (Director, ADRENT Steel) | 2. Rosy Das (AABSyS IT)
-- PANEL 2: POSH & Modern Workplace: "Beyond Compliance: Building Inclusive Workplaces"
+- PANEL 2: Modern Workplace: "Beyond Compliance: Building Inclusive Workplaces"
   Moderator: Dr. Adarsh Rath (Entrepreneur)
   Panel Members: 1. Dr. Isha Mishra (Associate Professor, KIIT) | 2. R.K. Mohapatra (Former HR Head, IOCL) | 3. Mr. Parthasarathi Mishra (Ex-CHRM, Tata Steel)
 
@@ -488,7 +488,7 @@ DETAILED CONCLAVE SCHEDULE (OCTOBER 3, 2026):
 - 12:45 – 01:00 PM: Interactive Audience Q&A Session
 - 01:00 – 02:00 PM: Networking Lunch Break
 - 02:00 – 03:00 PM: Parallel Sessions (Track A: HR Delegates' Viewpoint / Track B: Student Activity "Risk It, But Think Smart")
-- 03:00 – 03:30 PM: Panel Discussion 2: POSH & Modern Workplace Equity
+- 03:00 – 03:30 PM: Panel Discussion 2: Modern Workplace Equity & Inclusivity
 - 03:30 – 03:40 PM: Interactive Audience Q&A Session
 - 03:45 – 04:15 PM: Top 3 Student Competitive Presentations
 - 04:15 – 04:30 PM: Felicitation, Valedictory & Vote of Thanks
